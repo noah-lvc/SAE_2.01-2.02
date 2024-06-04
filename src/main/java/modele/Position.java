@@ -28,7 +28,6 @@ public class Position {
      * @param parPosition : la position vers laquelle this se rapproche
      */
     public void deplacementUneCase(Position parPosition) {
-        System.out.println(parPosition);
         if (this.abscisse > parPosition.abscisse) {
             this.abscisse -= 1;
             nbPas += 1;

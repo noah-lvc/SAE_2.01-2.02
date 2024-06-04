@@ -1,14 +1,11 @@
 package algo;
 
-import javafx.geometry.Pos;
 import modele.Position;
 import modele.Temple;
 import vue.VBoxRoot;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.PriorityQueue;
-import java.util.TreeSet;
 
 /** Calcule de la manière la plus optimale le chemin à parcourir*/
 public class PlusCourtChemin {
@@ -85,7 +82,6 @@ public class PlusCourtChemin {
         Position positionApprenti = new Position(id.getPositionApprenti()[0], id.getPositionApprenti()[1]);
 
         Position positionTemple = VBoxRoot.getApprenti().getListeTemples().get(id.getTempleEchange()).getPosition();
-        System.out.println(positionTemple);
         VBoxRoot.getCanva().deplacementPriorityQueue(VBoxRoot.getApprenti().getPositionApprenti(), positionTemple);
     }
 

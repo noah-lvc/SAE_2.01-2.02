@@ -2,10 +2,7 @@ package algo;
 
 import modele.Temple;
 import vue.VBoxRoot;
-
-import java.lang.Math;
 import java.util.ArrayList;
-
 import static java.lang.Math.abs;
 
 /** La classe Configuration représente des configuration de jeu avec la position de l'apprenti, la liste des cristaux dans
@@ -117,11 +114,7 @@ public class Configuration implements Comparable<Configuration> {
      * @param posTemple la postion du temple sous la forme {x,y}
      */
     public void setDistance(Configuration configActuelle, int[] posTemple) {
-        distance += abs(configActuelle.getPositionApprenti()[0] - posTemple[0]) + abs(configActuelle.getPositionApprenti()[1] - posTemple[1]);
-//        System.out.println(distance);
-        System.out.println(abs(configActuelle.getPositionApprenti()[0] - posTemple[0]));
-//        System.out.println(abs(configActuelle.getPositionApprenti()[1] - posTemple[1]));
-    }
+        distance += abs(configActuelle.getPositionApprenti()[0] - posTemple[0]) + abs(configActuelle.getPositionApprenti()[1] - posTemple[1]);}
 
     /** Mutateur sur le champ positionApprenti qui modifie la position de l'apprenti pour la position du temple ou il se trouve
      *

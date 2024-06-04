@@ -40,7 +40,6 @@ public class TriSel {
         int indice = 0;
         for (Temple temple: getApprenti().getListeTemples()) {
             if (temple.getCouleurCristal() == couleurCristal) {
-                System.out.println(indice);
                 return indice;
             }
             indice++;

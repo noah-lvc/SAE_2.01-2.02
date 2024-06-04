@@ -10,6 +10,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import modele.*;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Timer;
 import java.util.TimerTask;
 import static vue.VBoxRoot.getApprenti;
